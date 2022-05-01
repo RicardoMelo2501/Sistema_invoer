@@ -6,10 +6,16 @@ $this->Html->css('page', ['block' => true]);
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('Home'), ['controller' => 'Blog', 'action' => 'home']) ?></li>
         <li><?= $this->Html->link(__('Dashboard'), ['controller' => 'Blog', 'action' => 'dashboard']) ?></li>
         <li><?= $this->Html->link(__('Nova Carga'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Listar Empresas'), ['controller' => 'Empresas', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Novo Veiculo'), ['controller' => 'Veiculos', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Novo Porto'), ['controller' => 'Portos', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Nova Empresa'), ['controller' => 'Empresas', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Listar Empresas'), ['controller' => 'Empresas', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Carga'), ['controller' => 'Cargas', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Veiculos'), ['controller' => 'Veiculos', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Portos'), ['controller' => 'Portos', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="cargas index large-9 medium-8 columns content">
@@ -20,7 +26,7 @@ $this->Html->css('page', ['block' => true]);
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('tipo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('empresa_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('peso') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('peso (Tonelada)') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('nota_fiscal') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('Criado') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('Modificado') ?></th>

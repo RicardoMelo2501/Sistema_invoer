@@ -1,8 +1,7 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Porto $porto
- */
+
+$this->Html->css('page', ['block' => true]);
+
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">

@@ -2,13 +2,16 @@
 <div style="margin: 20px;">
     <?= $this->Html->link('VOLTAR PARA CARGAS', ['controller' => 'Cargas', 'action' => 'index'], ['class' => 'button']) ?>
 </div>
-<img style="margin: 1% 38%;" class='logo-img' src="../img/logo.3.png" alt="logo da empresa">
+
+<div class="col-12 d-flex justify-content-center">
+    <img class='logo-img' src="../img/logo.3.png" alt="logo da empresa">
+</div>
 
 <body style="background-color: #0F1733;">
 
     <div class="container overflow-hidden">
-        <div class="row">
-            <div class="col-md-3 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <h5 class="card-header">Total de Veiculos Cadastrados</h5>
                     <div class="card-body">
@@ -17,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <i class="far fa-calendar-alt"></i>
                     <h5 class="card-header">Total de Empresas Ativas</h5>
@@ -27,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <h5 class="card-header">Quantidade de Cargas</h5>
                     <div class="card-body">
@@ -36,7 +39,12 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mb-3">
+        </div>
+    </div>
+    
+    <div class="container overflow-hidden">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <h5 class="card-header">Toneladas Armazenadas</h5>
                     <div class="card-body">
@@ -44,21 +52,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container overflow-hidden">
-        <div class="row justify-content-center">
-            <div class="col-md-3 mb-3">
-                <div class="card">
-                    <h5 class="card-header">Total Motoristas Cadastrados</h5>
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $total_motoristas['total'] ?></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 mb-3">
+            
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <i class="far fa-calendar-alt"></i>
                     <h5 class="card-header">Faturamento</h5>
@@ -67,8 +62,17 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-3 mb-3">
+            
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h5 class="card-header">Total Motoristas Cadastrados</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $total_motoristas['total'] ?></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <h5 class="card-header">Total Portos</h5>
                     <div class="card-body">

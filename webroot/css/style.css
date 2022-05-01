@@ -90,7 +90,7 @@ main .container {
 
 article .quem-somos {
     /* background:  linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.42)100%), url(img/W0pP\ 1.png); */
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)100%), url(../img/pexels-photo-3057960.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)100%), url(../img/download.jpg);
     background-size: cover;
     background-position: center center;
     height: 400px;
@@ -129,7 +129,9 @@ article .conteudo-2 {
     flex-direction: column;
     align-items: center;
 
-    height: 50vh;
+    color: white;
+    font-size: 30px;
+    height: 60vh;
 
 }
 

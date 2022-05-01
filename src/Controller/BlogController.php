@@ -30,7 +30,7 @@ class BlogController extends AppController
         )->fetch('assoc');
 
         $total_cargas = $connection->execute(
-            "SELECT SUM(id) AS total FROM cargas"
+            "SELECT COUNT(id) AS total FROM cargas"
         )->fetch('assoc');
 
         $total_peso = $connection->execute(
@@ -44,8 +44,6 @@ class BlogController extends AppController
         $total_portos = $connection->execute(
             "SELECT COUNT(id) AS total FROM portos"
         )->fetch('assoc');
-
-        var_dump($total_faturamento);
 
         $this->set(compact(
             'total_empresas',

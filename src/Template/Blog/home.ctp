@@ -14,9 +14,8 @@
     <header class="cabecario">
         <img class='logo-img' src="../img/logo.3.png" alt="logo da empresa">
         <div id="atalhos">
-            <?= $this->Html->link(__('Entrar'), ['controller' => 'Users', 'action' => 'login'], ['class' => 'logo-img']) ?>
+            <?= $this->Html->link(__('Entrar'), ['controller' => 'Users', 'action' => 'login'], ['class' => 'btn btn-success']) ?>
             <?= $this->Html->link(__('Cadastro'), ['controller' => 'Users', 'action' => 'add'], ['class' => 'logo-img']) ?>
-            <?= $this->Html->link(__('Cadastrar Empresa'), ['controller' => 'Empresas', 'action' => 'add'], ['class' => 'logo-img']) ?>
         </div>
     </header>
     <main>
@@ -33,6 +32,12 @@
         </div>
     </main>
     <article>
+        <div class="conteudo-2">
+            <h2>Como Funcionamos</h2>
+            <div style="margin-top: 60px;">
+            <img src="../img/Expedição_Nacional-removebg-preview 1.png" alt="">
+            </div>
+        </div>
         <div class="quem-somos">
             <div class="conteudo">
                 <h2>Atuamos na ligação entre os Portos do Nordeste.</h2>
@@ -44,9 +49,6 @@
             <!-- <video id="video" poster="poster.JPG" autoplay muted loop> 
                 <source src="videos/pexels-kelly-lacy-6756500.mp4" type="video/mp4">
             </video> -->
-        </div>
-        <div class="conteudo-2">
-            <img style="margin-top: 75px; height: auto;" src="../img/Expedição_Nacional-removebg-preview 1.png" alt="">
         </div>
     </article>
     <article>
@@ -64,7 +66,7 @@
                         <li><i class="fas fa-map-marked-alt" style="font-size: 50px;"></i> Escolha do trajeto intermodal.</li>
                     </ul>
                 </div>
-                <div class="imagem" style="margin-left: 30%;">
+                <div class="imagem">
                     <!-- <img src="img/suape 1.png" alt=""> -->
                     <iframe width="530" height="700" src="https://www.youtube.com/embed/cxpVlKTgTdk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
